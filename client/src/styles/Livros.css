@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+.container {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; 
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  max-width: 150px; 
+}
+
+th {
+  background-color: #2D3748;
+  color: #A0AEC0;
+}
+
+td {
+  color: #E2E8F0;
+}
+
+.editButton, .deleteButton {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.editButton {
+  background-color: #007BFF;
+  color: #FFF;
+  margin-right: 5px;
+}
+
+.deleteButton {
+  background-color: #DC3545;
+  color: #FFF;
+}
+
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-criar {
+    margin-bottom: 20px;
+    background-color: #4CAF50;
+    color: #FFF;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+  }
+  
+  .table-container {
+    max-height: 500px;
+    overflow-y: auto;
+    margin-top: 10px;
+  }
+  
+  .status-indicator {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;  
+  background-color: #ccc;  
+}
+
+.status-indicator.disponivel {
+  background-color: #4CAF50;  
+}
+
+.status-indicator.indisponivel {
+  background-color: #FF5722;  
+}

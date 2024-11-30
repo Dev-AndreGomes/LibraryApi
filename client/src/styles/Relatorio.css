@@ -1,0 +1,50 @@
+.relatorio-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: white;
+  }
+  
+  .chart-container {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 20px; 
+  }
+ 
+  
+  .usuarios-container {
+    padding: 10px;
+  }
+  
+  .usuarios-container {
+    max-width: 100%;  
+    margin-top: 20px;  
+  }
+  
+  .usuarios-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+  }
+  
+  .usuarios-table th, .usuarios-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table-scroll {
+    max-height: 200px;   
+    overflow-y: auto;   
+    margin-top: 20px;
+  }
+  
+  
+  

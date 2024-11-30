@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #2D3748;
+  border-radius: 8px;
+  color: #FFF;
+  }
+  
+  .input-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .input-grid input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn-registrar {
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+    max-width: 200px;
+    margin-top: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    margin-right: 10px;
+  }
+
+  .btn-cancel {
+    background-color: #DC3545;
+    color: #FFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+    max-width: 200px;
+    margin-top: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    margin-right: 10px;
+  }
+  
+  .btn-registrar:hover {
+    background-color: #45a049;
+  }
+  

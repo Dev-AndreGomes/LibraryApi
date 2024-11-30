@@ -1,0 +1,70 @@
+.devolucao-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2D3748;
+    border-radius: 8px;
+  }
+  
+  .form-devolucao {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group input{
+    margin-left: 10px;
+  }
+  
+  .label-devolucao {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .input-devolucao {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid white;
+  }
+  
+  .confirmacao {
+    background-color: #2D3748;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .info-pessoa, .info-livro {
+    margin: 0 15px 5px 0;           
+    font-size: 16px;
+  }
+  
+  .actions-d {
+    display: flex;
+    margin-top: 15px;
+  }
+  
+  .btn-confirmar-d, .btn-cancelar-d {
+    padding: 10px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .btn-confirmar-d {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .btn-cancelar-d{
+    background-color: #DC3545;
+    margin-left: 20px;
+    color: white;
+  }
+  
+  .mensagem {
+    margin-top: 20px;
+    font-size: 16px;
+    color: white;
+  }
+  
