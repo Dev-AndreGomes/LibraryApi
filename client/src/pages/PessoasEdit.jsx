@@ -8,7 +8,7 @@ const PessoasEdit = () => {
   const [endereco, setEndereco] = useState("");
   const [email, setEmail] = useState("");
   const [telefone, setTelefone] = useState("");
-  const [limiteEmprestimos, setLimiteEmprestimos] = useState(3);
+  const [limiteEmprestimos, setLimiteEmprestimos] = useState(5);
   const navigate = useNavigate();
 
   

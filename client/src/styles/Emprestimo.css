@@ -39,13 +39,13 @@ h1 {
   box-sizing: border-box;
 }
 
-.btn-confirmar {
+.btn-confirmar-e {
   display: flex;
   margin: auto;
   background-color: #4CAF50;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 20px 10px 30px;
   border-radius: 5px;
   cursor: pointer;
   width: 220px;
@@ -54,7 +54,7 @@ h1 {
 
 }
 
-.btn-confirmar:hover {
+.btn-confirmar-e:hover {
   background-color: #45a049;
 }
 
@@ -121,7 +121,8 @@ h1 {
   border: none;
   cursor: pointer;
   margin-left: auto;              
-  margin-right: auto;          
+  margin-right: auto;    
+  font-family: 'Rubik', sans-serif;      
 }
 
 .actions button:hover {

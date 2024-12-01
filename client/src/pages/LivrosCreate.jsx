@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import '../styles/LivrosCreate.css'; 
 
 function LivrosCreate() {
@@ -9,6 +10,8 @@ function LivrosCreate() {
   const [anoLancamento, setAnoLancamento] = useState(0);
   const [alertMessage, setAlertMessage] = useState(""); 
   const [alertType, setAlertType] = useState(""); 
+
+  const navigate = useNavigate();
 
   const addLivro = async () => {
     const livroData = {
@@ -42,7 +45,7 @@ function LivrosCreate() {
     }
   };
 
-  const cancelarEdicao = () => {
+  const cancelarAdd = () => {
     navigate("/"); 
   };
 
@@ -72,7 +75,7 @@ function LivrosCreate() {
         />
       </div>
       <button className="btn-registrar" onClick={addLivro}>Registrar Livro</button>
-      <button className="btn-cancel" onClick={cancelarEdicao}>Cancelar</button>
+      <button className="btn-cancel" onClick={cancelarAdd}>Cancelar</button>
 
       {alertMessage && (
         <div className={`alert ${alertType}`}>
