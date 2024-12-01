@@ -3,10 +3,21 @@ from rest_framework.response import Response
 from rest_framework import status
 from .models import Pessoa
 from .serializer import PessoaSerializer
+from django.db.models import Q  
 
 @api_view(['GET'])
 def get_pessoas(request):
-    pessoas = Pessoa.objects.all()
+    search = request.query_params.get('search', '') 
+    
+    if search:
+        pessoas = Pessoa.objects.filter(
+            Q(nome__icontains=search) | 
+            Q(email__icontains=search) | 
+            Q(id__icontains=search)
+        )
+    else:
+        pessoas = Pessoa.objects.all()
+
     serializedData = PessoaSerializer(pessoas, many=True).data
     return Response(serializedData)
 
@@ -51,5 +62,3 @@ def pessoa_detalhes(request, pk):
             serializer.save()
             return Response(serializer.data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    
-    

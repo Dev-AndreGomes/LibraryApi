@@ -3,12 +3,20 @@ from rest_framework.response import Response
 from rest_framework import status
 from .models import Livro
 from .serializer import LivroSerializer
+from django.db.models import Q
 
 @api_view(['GET'])
 def get_livros(request):
-    livros = Livro.objects.all()
-    serializedData = LivroSerializer(livros, many=True).data
-    return Response(serializedData)
+    search = request.GET.get('search', '')  
+    if search:
+        livros = Livro.objects.filter(
+            Q(titulo__icontains=search) | Q(id__icontains=search) | Q(autor__icontains=search)
+        )
+    else:
+        livros = Livro.objects.all()
+
+    serialized_data = LivroSerializer(livros, many=True).data
+    return Response(serialized_data)
 
 @api_view(['GET'])
 def get_livro(request, pk):

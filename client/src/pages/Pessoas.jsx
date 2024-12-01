@@ -5,12 +5,13 @@ import '../styles/Pessoas.css';
 const Pessoas = () => {
   const [pessoas, setPessoas] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [search, setSearch] = useState(""); 
   const navigate = useNavigate();
 
   useEffect(() => {
     const fetchPessoas = async () => {
       try {
-        const response = await fetch("http://127.0.0.1:8000/pessoa/pessoas/");
+        const response = await fetch(`http://127.0.0.1:8000/pessoa/pessoas/?search=${search}`);
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
@@ -23,14 +24,13 @@ const Pessoas = () => {
       }
     };
     fetchPessoas();
-  }, []);
+  }, [search]); 
 
   const deletePessoa = async (id) => {
     try {
-      const response = await fetch(`http://127.0.0.1:8000/pessoa/pessoas/create/${id}`, {
+      await fetch(`http://127.0.0.1:8000/pessoa/pessoas/create/${id}`, {
         method: "DELETE",
       });
-
       setPessoas((prev) => prev.filter((pessoa) => pessoa.id !== id));
     } catch (err) {
       console.log(err);
@@ -45,15 +45,23 @@ const Pessoas = () => {
     <div className="container">
       <h1>Gerenciamento de Pessoas</h1>
 
-      
-      <button
-        onClick={() => navigate("/pessoas/criar")} 
-        className="btn-criar"
-      >
-        Criar Nova Pessoa
-      </button>
+      <div className="actions-container">
+        <button
+          onClick={() => navigate("/pessoas/criar")}
+          className="btn-criar"
+        >
+          Criar Nova Pessoa
+        </button>
 
-     
+        <input
+          type="text"
+          placeholder="Pesquisar por ID, Nome ou Email"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="search-bar"
+        />
+      </div>
+
       <div className="table-container">
         <table>
           <thead>
@@ -81,12 +89,12 @@ const Pessoas = () => {
                 </td>
                 <td>{pessoa.telefone}</td>
                 <td>
-                <button
-                  onClick={() => navigate(`/pessoas/editar/${pessoa.id}`)}
-                  className="editButton"
-                >
-                  Editar
-                </button>
+                  <button
+                    onClick={() => navigate(`/pessoas/editar/${pessoa.id}`)}
+                    className="editButton"
+                  >
+                    Editar
+                  </button>
 
                   <button
                     onClick={() => deletePessoa(pessoa.id)} 
