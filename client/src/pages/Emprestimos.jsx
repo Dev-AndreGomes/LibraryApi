@@ -100,7 +100,7 @@ function Emprestimo() {
           />
         </div>
 
-        <button type="button" onClick={() => setShowConfirmacao(true)} className="btn-confirmar">
+        <button type="button" onClick={() => setShowConfirmacao(true)} className="btn-confirmar-e">
           Visualizar Confirmação
         </button>
       </form>
