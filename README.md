@@ -32,6 +32,6 @@ Autores
 
 ![Estrutura de Pastas](https://github.com/Dev-AndreGomes/LibraryApi/blob/master/Captura%20de%20tela%202024-12-02%20015109.png)
 
-[Lista de Comandos](caminho-ou-URL-do-arquivo)
+[Lista de Comandos Para Fluxo de Trabalho](https://github.com/Dev-AndreGomes/LibraryApi/blob/master/Git_Tutorial_Fluxo_de_Trabalho.pdf)
 
 
