@@ -30,5 +30,8 @@ Autores
 -Kleiner Mauricio
 
 
-![Descrição da imagem](Captura de tela 2024-12-02 015109.png)
+![Estrutura de Pastas](https://github.com/Dev-AndreGomes/LibraryApi/blob/master/Captura%20de%20tela%202024-12-02%20015109.png)
+
+[Lista de Comandos](caminho-ou-URL-do-arquivo)
+
 
