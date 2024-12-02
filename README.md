@@ -34,5 +34,5 @@ Autores
 
 [Lista de Comandos Para Fluxo de Trabalho](https://github.com/Dev-AndreGomes/LibraryApi/blob/master/Git_Tutorial_Fluxo_de_Trabalho.pdf)
 
-
+[Todas as Ferramentas Utilizadas no Projeto](https://github.com/Dev-AndreGomes/LibraryApi/blob/master/imagem_2024-12-02_024123150.pdf)
 
