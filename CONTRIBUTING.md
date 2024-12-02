@@ -30,3 +30,5 @@ Envie o branch:
 Abra um Pull Request no GitHub.
 
 Clique em Commit changes.
+
+[Lista de Comandos Para Fluxo de Trabalho](https://github.com/Dev-AndreGomes/LibraryApi/blob/master/Git_Tutorial_Fluxo_de_Trabalho.pdf)
