@@ -1,38 +1,27 @@
-# LibraryApi
+# 📚 Library API & Dashboard - Sistema de Gestão de Acervo
 
+Este projeto foi desenvolvido como uma prática avançada de **Back-end Framework**, unindo o poder do **Python/Django** com a interatividade do **React**. O sistema gerencia o ciclo de vida de uma biblioteca, desde o cadastro de livros até o controle inteligente de empréstimos e devoluções.
 
-## Descrição do Projeto
-API para gerenciamento de bibliotecas, desenvolvida em Django e React.
+## 🎯 Objetivo do Projeto
+Automatizar o controle de acervos e fluxos de empréstimos, substituindo processos manuais por uma solução digital que calcula multas automaticamente e organiza o relacionamento entre usuários e livros.
 
-## Como baixar o repositório
-1. Clone o repositório:
-   
-       git clone https://github.com/Dev-AndreGomes/LibraryApi.git
-       cd LibraryApi
+## 🚀 Funcionalidades Principais
+- **CRUD Completo:** Gerenciamento de livros, usuários e registros de empréstimo.
+- **Lógica de Negócio Automática:** Sistema que calcula juros/multas em tempo real caso a devolução do livro esteja atrasada.
+- **Relacionamento de Dados:** Arquitetura relacional ligando IDs de usuários aos livros, garantindo rastreabilidade total.
+- **Dashboard Responsivo:** Interface para visualização do status de cada exemplar (disponível, emprestado ou em atraso).
 
-Instale as dependências:
+## 🛠️ Tecnologias Utilizadas
+- **Back-end:** Python e Django (Framework para APIs robustas).
+- **Front-end:** React, HTML5 e CSS3 (Interface moderna e estilizada).
+- **Banco de Dados:** SQLite (Armazenamento e persistência de dados).
+- **Integração:** Consumo de API REST para comunicação entre Front e Back.
 
-    npm install
+## 📈 Relevância para Transformação Digital
+Este projeto reflete competências fundamentais para iniciativas digitais:
+1. **Lógica de Automação:** Criação de regras automáticas para facilitar processos internos.
+2. **Visualização de Dados:** Desenvolvimento de Dashboards que auxiliam na gestão e acompanhamento de indicadores.
+3. **Desenvolvimento Web:** Domínio de HTML/CSS e frameworks modernos para criação de ferramentas acessíveis e eficientes.
 
-Pré-requisitos
--Node.js
--MySQL
-
-Contribuindo
-
-Consulte o arquivo [CONTRIBUTING.md](https://github.com/Dev-AndreGomes/LibraryApi/blob/master/CONTRIBUTING.md)
-
-Autores
-
--Andre Gomes
--Reinaldo Rodrigues
--Gustavo Wallace
--Kleiner Mauricio
-
-
-![Estrutura de Pastas](https://github.com/Dev-AndreGomes/LibraryApi/blob/master/Captura%20de%20tela%202024-12-02%20015109.png)
-
-[Lista de Comandos Para Fluxo de Trabalho](https://github.com/Dev-AndreGomes/LibraryApi/blob/master/Git_Tutorial_Fluxo_de_Trabalho.pdf)
-
-[Todas as Ferramentas Utilizadas no Projeto](https://github.com/Dev-AndreGomes/LibraryApi/blob/master/imagem_2024-12-02_024123150.pdf)
-
+---
+Desenvolvido por [André Gomes](https://github.com/Dev-AndreGomes)
